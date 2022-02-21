@@ -83,3 +83,13 @@ void atvd8(){
   var lista = [1,5,6,7];
   lista.forEach((value) => print(value * 2));
 }
+
+void exemplo_tratamento_de_null(){
+  int? n1 = 10;
+  var n2 = 3;
+  int? n3 = null;
+  n3 ??= n1;
+  print(n3);
+  n2 ?? print("n2 é nulo");
+  
+}
